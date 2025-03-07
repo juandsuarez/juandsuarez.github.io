@@ -420,9 +420,13 @@
 }
 
 @media (max-width: 575px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 300px;
+  }
+
   .u-section-3 .u-gallery-1 {
-    margin-top: 1px;
-    margin-bottom: 1px;
+    height: 300px;
+    margin-bottom: 0;
     margin-right: initial;
     margin-left: initial;
     width: auto;

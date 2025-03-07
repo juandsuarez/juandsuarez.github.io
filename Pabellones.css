@@ -932,6 +932,10 @@
 }
 
 @media (max-width: 575px) {
+  .u-section-8 .u-sheet-1 {
+    min-height: 446px;
+  }
+
   .u-section-8 .u-text-1 {
     width: auto;
     margin-top: 40px;
@@ -940,7 +944,8 @@
   }
 
   .u-section-8 .u-gallery-1 {
-    margin-bottom: 0;
+    height: 300px;
+    margin-bottom: 40px;
     margin-right: initial;
     margin-left: initial;
     width: auto;
