@@ -78,27 +78,40 @@ RW Producciones
 
 <body>
 
-  <header id="header">
-    <div class="container header-inner">
-      <a href="#inicio" class="logo">
-        <img src="assets/images/brand/logo-rw-producciones.png" alt="RW Producciones">
+  <header id="header" class="site-header">
+  <div class="container header-inner">
+
+    <!-- LOGO -->
+    <a href="index.html" class="logo">
+      <img src="assets/images/brand/logo-rw-producciones.png" alt="RW Producciones">
+    </a>
+
+    <!-- BOTON MENU MOBILE -->
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- MENU -->
+    <nav id="navMenu" class="nav-menu">
+
+      <a href="index.html">Inicio</a>
+
+      <a href="sobre-nosotros.html">Sobre nosotros</a>
+
+      <a href="servicios.html">Servicios</a>
+
+      <a href="proyectos.html">Proyectos</a>
+
+      <a href="contacto.html" class="menu-cta">
+        Contáctanos
       </a>
 
-      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+    </nav>
 
-      <nav id="navMenu">
-        <a href="#inicio">Inicio</a>
-        <a href="sobre-nosotros.html">Sobre nosotros</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="#trayectoria">Trayectoria</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </div>
-  </header>
+  </div>
+</header>
 
   <!-- HERO -->
   <section class="hero" id="inicio">
@@ -184,41 +197,55 @@ RW Producciones
   </section>
 
   <!-- SOBRE NOSOTROS -->
-  <section class="about-summary section" id="nosotros-resumen">
-    <div class="container">
-      <div class="section-heading reveal">
-        <h2>RW Producciones</h2>
-        <p>
-          Infraestructura, técnica y montaje para eventos con presencia,
-          seguridad y una ejecución profesional.
-        </p>
-      </div>
+  
 
-      <div class="about-symmetric reveal">
-        <a href="sobre-nosotros.html" class="about-box image-box interactive-card">
-          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1600&auto=format&fit=crop" alt="Evento placeholder">
-        </a>
+<section class="about-stack section" id="nosotros-resumen">
+  <div class="container">
 
-        <div class="about-box center-box">
-          <img src="assets/images/brand/logo-rw-producciones.png" alt="RW Producciones">
-          <p>
-            Somos una empresa especializada en alquiler de tarimas, techos,
-            pabellones, técnica, palcos, cerramientos y graderías para eventos
-            de distintos formatos.
-          </p>
-          <div class="about-mini-points">
-            <span>Misión: servicio seguro y profesional</span>
-            <span>Visión: ser referente en montajes para eventos</span>
-          </div>
-          <a href="sobre-nosotros.html" class="btn btn-primary">Ver sobre nosotros</a>
-        </div>
-
-        <a href="sobre-nosotros.html" class="about-box image-box interactive-card">
-          <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1600&auto=format&fit=crop" alt="Montaje placeholder">
-        </a>
-      </div>
+    <div class="section-heading reveal">
+      <h2>RW Producciones</h2>
+      <p>
+        Infraestructura, técnica y montaje para eventos con presencia, seguridad y ejecución profesional.
+      </p>
     </div>
-  </section>
+
+    <div class="about-stack-wrap reveal">
+
+      <div class="about-stack-card">
+        <img
+          src="assets/images/brand/logo-rw-producciones.png"
+          alt="RW Producciones"
+          class="about-stack-logo"
+        >
+
+        <div class="about-stack-content">
+
+<p class="about-stack-text">
+Desde eventos corporativos hasta producciones de gran formato,
+RW Producciones ofrece soluciones integrales de infraestructura,
+montaje técnico y operación para garantizar eventos seguros,
+impactantes y ejecutados con altos estándares profesionales.
+</p>
+
+<a href="sobre-nosotros.html" class="btn btn-primary about-stack-btn">
+Ver sobre nosotros
+</a>
+
+</div>
+      </div>
+
+      <a href="sobre-nosotros.html" class="about-stack-image interactive-card">
+        <img
+          src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1800&auto=format&fit=crop"
+          alt="Equipo RW Producciones"
+        >
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
 
   <!-- SERVICIOS -->
   <section class="services section" id="servicios-resumen">
@@ -365,7 +392,7 @@ RW Producciones
     </div>
 
     <div class="trajectory-btn-wrap reveal">
-      <a href="proyectos.html" class="btn btn-primary">Ver más proyectos</a>
+      <a href="proyectos.html" class="btn btn-primary">Ver proyectos</a>
     </div>
   </div>
 </section>
@@ -396,62 +423,7 @@ RW Producciones
   </section>
 
   <!-- CONTACTO -->
-  <section class="contact-summary section" id="contacto">
-    <div class="container">
-      <div class="section-heading reveal">
-        <h2>Canales de atención</h2>
-        
-      </div>
-
-      <div class="contact-layout reveal">
-        <a href="contacto.html" class="contact-side-image interactive-card">
-          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop" alt="Contacto placeholder 1">
-        </a>
-
-        <div class="contact-center">
-          <div class="contact-grid">
-            <a href="tel:+573194605024" class="contact-card interactive-card">
-              <h3>Teléfono</h3>
-              <p>+57 3194605024</p>
-            </a>
-
-            <a href="https://wa.me/573194605024" target="_blank" rel="noopener" class="contact-card interactive-card">
-              <h3>WhatsApp</h3>
-              <p>+57 3194605024</p>
-            </a>
-
-            <a href="mailto:contacto@rwproducciones.com" class="contact-card interactive-card">
-              <h3>Correo</h3>
-              <p>contacto@rwproducciones.com</p>
-            </a>
-
-            <a href="https://instagram.com/rwproduccionessas" target="_blank" rel="noopener" class="contact-card interactive-card">
-              <h3>Instagram</h3>
-              <p>@rwproduccionessas</p>
-            </a>
-
-            <a href="https://tiktok.com/@rwproduccionessas" target="_blank" rel="noopener" class="contact-card interactive-card">
-              <h3>TikTok</h3>
-              <p>@rwproduccionessas</p>
-            </a>
-
-            <a href="https://maps.google.com" target="_blank" rel="noopener" class="contact-card interactive-card">
-              <h3>Ubicación</h3>
-              <p>Bogotá D.C, Colombia</p>
-            </a>
-          </div>
-
-          <div class="contact-page-btn">
-            <a href="contacto.html" class="btn btn-primary">Ver página de contacto</a>
-          </div>
-        </div>
-
-        <a href="contacto.html" class="contact-side-image interactive-card">
-          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1200&auto=format&fit=crop" alt="Contacto placeholder 2">
-        </a>
-      </div>
-    </div>
-  </section>
+  
 
   <!-- FOOTER -->
   <footer>
@@ -528,22 +500,41 @@ RW Producciones
 }
 </script>
 
-<!-- WHATSAPP FLOAT PREMIUM -->
+<!-- WHATSAPP FLOAT -->
+<div class="wa-floating-wrap" id="waFloatingWrap">
 
-<div class="whatsapp-widget">
+  <div class="wa-chat-card" id="waChatCard">
+    <button class="wa-chat-close" id="waChatClose" aria-label="Cerrar">×</button>
+    <span class="wa-chat-badge">RW Producciones</span>
+    <h4>¿Planeas un evento?</h4>
+    <p>
+      Escríbenos por WhatsApp y te ayudamos a cotizar tarimas, técnica,
+      estructuras y montaje.
+    </p>
+    <a
+      href="https://wa.me/573194605024?text=Hola%20RW%20Producciones%2C%20quiero%20cotizar%20un%20evento."
+      target="_blank"
+      rel="noopener"
+      class="wa-chat-btn"
+      id="waChatBtn"
+    >
+      Ir a WhatsApp
+    </a>
+  </div>
 
-<a
-href="https://wa.me/573194605024?text=Hola%20RW%20Producciones,%20quisiera%20información%20sobre%20infraestructura%20para%20eventos."
-target="_blank"
-rel="noopener"
-class="whatsapp-button"
-aria-label="WhatsApp">
-
-<span class="whatsapp-text">Escríbenos</span>
-
-<img src="assets/images/icons/whatsapp.png" alt="WhatsApp">
-
-</a>
+  <a
+    href="https://wa.me/573194605024?text=Hola%20RW%20Producciones%2C%20quiero%20cotizar%20un%20evento."
+    target="_blank"
+    rel="noopener"
+    class="wa-floating-btn"
+    id="waFloatingBtn"
+    aria-label="Escribir por WhatsApp"
+  >
+    <span class="wa-floating-icon">
+      <img src="assets/images/icons/whatsapp.png" alt="WhatsApp">
+    </span>
+    <span class="wa-floating-text">Escríbenos</span>
+  </a>
 
 </div>
 

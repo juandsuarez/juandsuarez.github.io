@@ -27,31 +27,39 @@
 
 <!-- HEADER -->
 
-<header id="header">
+<header id="header" class="site-header">
+  <div class="container header-inner">
 
-<div class="container header-inner">
+    <!-- LOGO -->
+    <a href="index.html" class="logo">
+      <img src="assets/images/brand/logo-rw-producciones.png" alt="RW Producciones">
+    </a>
 
-<a href="index.html" class="logo">
-<img src="assets/images/brand/logo-rw-producciones.png">
-</a>
+    <!-- BOTON MENU MOBILE -->
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-<button class="menu-btn" id="menuBtn">
-<span></span>
-<span></span>
-<span></span>
-</button>
+    <!-- MENU -->
+    <nav id="navMenu" class="nav-menu">
 
-<nav id="navMenu">
+      <a href="index.html">Inicio</a>
 
-<a href="index.html">Inicio</a>
-<a href="sobre-nosotros.html">Sobre nosotros</a>
-<a href="servicios.html">Servicios</a>
-<a href="index.html#trayectoria">Trayectoria</a>
-<a href="contacto.html">Contacto</a>
+      <a href="sobre-nosotros.html">Sobre nosotros</a>
 
-</nav>
+      <a href="servicios.html">Servicios</a>
 
-</div>
+      <a href="proyectos.html">Proyectos</a>
+
+      <a href="contacto.html" class="menu-cta">
+        Contáctanos
+      </a>
+
+    </nav>
+
+  </div>
 </header>
 
 
@@ -433,6 +441,45 @@ Dirección placeholder, Colombia
 </footer>
 
 <script src="assets/js/main.js"></script>
+
+
+<!-- WHATSAPP FLOAT -->
+<div class="wa-floating-wrap" id="waFloatingWrap">
+
+  <div class="wa-chat-card" id="waChatCard">
+    <button class="wa-chat-close" id="waChatClose" aria-label="Cerrar">×</button>
+    <span class="wa-chat-badge">RW Producciones</span>
+    <h4>¿Planeas un evento?</h4>
+    <p>
+      Escríbenos por WhatsApp y te ayudamos a cotizar tarimas, técnica,
+      estructuras y montaje.
+    </p>
+    <a
+      href="https://wa.me/573194605024?text=Hola%20RW%20Producciones%2C%20quiero%20cotizar%20un%20evento."
+      target="_blank"
+      rel="noopener"
+      class="wa-chat-btn"
+      id="waChatBtn"
+    >
+      Ir a WhatsApp
+    </a>
+  </div>
+
+  <a
+    href="https://wa.me/573194605024?text=Hola%20RW%20Producciones%2C%20quiero%20cotizar%20un%20evento."
+    target="_blank"
+    rel="noopener"
+    class="wa-floating-btn"
+    id="waFloatingBtn"
+    aria-label="Escribir por WhatsApp"
+  >
+    <span class="wa-floating-icon">
+      <img src="assets/images/icons/whatsapp.png" alt="WhatsApp">
+    </span>
+    <span class="wa-floating-text">Escríbenos</span>
+  </a>
+
+</div>
 
 </body>
 </html>
