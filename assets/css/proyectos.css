@@ -1,3 +1,4 @@
+/* HERO */
 .projects-hero {
   min-height: 58vh;
   display: flex;
@@ -50,19 +51,21 @@
   padding-top: 96px;
 }
 
+/* GRID */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 28px;
 }
 
+/* TARJETA (🔥 CORREGIDO) */
 .project-card {
   position: relative;
-  min-height: 360px;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* 🔥 TODAS IGUALES */
   border: 1px solid var(--rw-border);
   border-radius: 26px;
   overflow: hidden;
-  padding: 0;
   cursor: pointer;
   background: rgba(255, 255, 255, .03);
   box-shadow: var(--rw-shadow);
@@ -75,11 +78,11 @@
   box-shadow: 0 24px 48px rgba(0, 0, 0, .30);
 }
 
+/* IMAGEN (🔥 CLAVE) */
 .project-card img {
   width: 100%;
   height: 100%;
-  min-height: 360px;
-  object-fit: cover;
+  object-fit: cover; /* 🔥 recorte elegante */
   display: block;
   transition: transform .7s cubic-bezier(.22, .61, .36, 1), filter .7s ease;
 }
@@ -89,6 +92,7 @@
   filter: brightness(.72);
 }
 
+/* OVERLAY */
 .project-overlay {
   position: absolute;
   inset: 0;
@@ -97,7 +101,6 @@
   flex-direction: column;
   justify-content: flex-end;
   background: linear-gradient(to top, rgba(0, 0, 0, .92), rgba(0, 0, 0, .22), transparent);
-  transition: transform .35s ease;
 }
 
 .project-tag {
@@ -172,16 +175,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  touch-action: pan-y;
-  transition: transform .28s ease, opacity .28s ease;
-  will-change: transform;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.project-lightbox-media.dragging {
-  transition: none;
-  cursor: grabbing;
 }
 
 .project-lightbox-media img,
@@ -189,8 +182,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  display: block;
-  background: #000;
 }
 
 .project-lightbox-caption {
@@ -212,14 +203,12 @@
   color: white;
   font-size: 28px;
   cursor: pointer;
-  z-index: 100001;
 }
 
 .project-lightbox-nav {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 100001;
   width: 56px;
   height: 56px;
   border: none;
@@ -238,36 +227,7 @@
   right: 24px;
 }
 
-.project-lightbox-media.slide-next-in {
-  animation: projectSlideNext .28s ease;
-}
-
-.project-lightbox-media.slide-prev-in {
-  animation: projectSlidePrev .28s ease;
-}
-
-@keyframes projectSlideNext {
-  from {
-    opacity: .7;
-    transform: translateX(28px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes projectSlidePrev {
-  from {
-    opacity: .7;
-    transform: translateX(-28px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
+/* RESPONSIVE */
 @media (max-width: 980px) {
   .projects-grid {
     grid-template-columns: 1fr;
@@ -279,11 +239,6 @@
     padding: 110px 0 60px;
   }
 
-  .project-card,
-  .project-card img {
-    min-height: 300px;
-  }
-
   .project-overlay h3 {
     font-size: 26px;
   }
@@ -292,24 +247,5 @@
     width: min(94vw, 1120px);
     height: min(74vh, 760px);
     margin-top: 11vh;
-  }
-
-  .project-lightbox-close {
-    top: 14px;
-    right: 14px;
-  }
-
-  .project-lightbox-nav {
-    width: 48px;
-    height: 48px;
-    font-size: 28px;
-  }
-
-  .project-lightbox-prev {
-    left: 12px;
-  }
-
-  .project-lightbox-next {
-    right: 12px;
   }
 }
