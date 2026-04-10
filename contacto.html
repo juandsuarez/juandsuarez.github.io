@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contacto | RW Producciones</title>
+  <meta name="description" content="Contáctanos para cotizar tarimas, técnica, estructuras, pabellones, graderías y montajes para eventos. RW Producciones SAS.">
+  <meta name="keywords" content="contacto RW Producciones, cotizar eventos, tarimas, estructuras, técnica, montaje de eventos">
+  <meta name="author" content="RW Producciones S.A.S.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" type="image/png" href="assets/images/brand/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/brand/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/contacto.css">
+</head>
+<body>
+
+  <header id="header" class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/brand/logo-rw-producciones.png" alt="RW Producciones">
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="navMenu" class="nav-menu">
+        <a href="index.html">Inicio</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="contacto.html" class="menu-cta">Contáctanos</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contact-hero">
+    <div class="container contact-hero-content">
+      <div class="contact-breadcrumb">
+        <a href="index.html">Inicio</a>
+        <span>/</span>
+        <span>Contacto</span>
+      </div>
+
+      <h1>Hablemos de tu <span>próximo evento</span></h1>
+      <p>
+        Cuéntanos qué necesitas y te ayudamos a orientar la mejor solución
+        en infraestructura, técnica y montaje para tu evento.
+      </p>
+    </div>
+  </section>
+
+  <section class="section contact-main-section">
+    <div class="container">
+      <div class="contact-main-grid reveal">
+
+        <div class="contact-info-card">
+          <span class="contact-kicker">RW Producciones</span>
+          <h2>Atención comercial y asesoría directa</h2>
+          <p>
+            Puedes escribirnos, llamarnos o enviarnos tu solicitud desde este formulario.
+            Operamos desde Bogotá y realizamos eventos en toda Colombia.
+          </p>
+
+          <div class="contact-info-list">
+            <a href="tel:+573194605024" class="contact-info-item interactive-card">
+              <div class="contact-info-icon">
+                <img src="assets/images/icons/phone.png" alt="Teléfono">
+              </div>
+              <div>
+                <h3>Teléfono</h3>
+                <p>+57 319 460 5024</p>
+              </div>
+            </a>
+
+            <a href="mailto:contacto@rwproducciones.com" class="contact-info-item interactive-card">
+              <div class="contact-info-icon">
+                <img src="assets/images/icons/mail.webp" alt="Correo">
+              </div>
+              <div>
+                <h3>Correo</h3>
+                <p>contacto@rwproducciones.com</p>
+              </div>
+            </a>
+
+            <a href="https://wa.me/573194605024" target="_blank" rel="noopener" class="contact-info-item interactive-card">
+              <div class="contact-info-icon">
+                <img src="assets/images/icons/whatsapp.png" alt="WhatsApp">
+              </div>
+              <div>
+                <h3>WhatsApp</h3>
+                <p>Escríbenos para cotizar</p>
+              </div>
+            </a>
+
+            <a href="https://maps.google.com/?q=Bogotá+D.C,+Colombia" target="_blank" rel="noopener" class="contact-info-item interactive-card">
+              <div class="contact-info-icon">
+                <img src="assets/images/icons/location.webp" alt="Ubicación">
+              </div>
+              <div>
+                <h3>Ubicación</h3>
+                <p>Bogotá D.C, Colombia</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-socials-large">
+            <a href="https://instagram.com/rwproduccionessas" target="_blank" rel="noopener" class="contact-info-item interactive-card">
+              <div class="contact-info-icon">
+                <img src="assets/images/icons/instagram.webp" alt="Instagram">
+              </div>
+              <div>
+                <h3>Instagram</h3>
+                <p>@rwproduccionessas</p>
+              </div>
+            </a>
+
+            <a href="https://tiktok.com/@rwproduccionessas" target="_blank" rel="noopener" class="contact-info-item interactive-card">
+              <div class="contact-info-icon">
+                <img src="assets/images/icons/tiktok.png" alt="TikTok">
+              </div>
+              <div>
+                <h3>TikTok</h3>
+                <p>@rwproduccionessas</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <span class="contact-kicker">Formulario</span>
+          <h2>Cuéntanos lo que necesitas</h2>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-alert" id="formAlert" aria-live="polite"></div>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                <small class="field-error"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="telefono">Teléfono *</label>
+                <input type="text" id="telefono" name="telefono" placeholder="Tu número">
+                <small class="field-error"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="correo">Correo *</label>
+                <input type="email" id="correo" name="correo" placeholder="Tu correo">
+                <small class="field-error"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="empresa">Empresa / Marca</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Opcional">
+                <small class="field-error"></small>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="servicio">Servicio de interés *</label>
+              <select id="servicio" name="servicio">
+                <option value="" selected disabled>Selecciona una opción</option>
+                <option value="Tarimas">Tarimas</option>
+                <option value="Techos y estructuras">Techos y estructuras</option>
+                <option value="Pabellones">Pabellones</option>
+                <option value="Técnica">Técnica</option>
+                <option value="Palcos">Palcos</option>
+                <option value="Cerramientos">Cerramientos</option>
+                <option value="Graderías">Graderías</option>
+              </select>
+              <small class="field-error"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" rows="6" placeholder="Cuéntanos qué tipo de evento tienes, fecha estimada, ubicación y lo que necesitas."></textarea>
+              <small class="field-error"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn" id="formSubmitBtn">
+              Enviar solicitud
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-map-section">
+    <div class="container">
+      <div class="contact-map-wrap reveal">
+        <div class="contact-map-card interactive-card">
+          <iframe
+            src="https://www.google.com/maps?q=Bogotá%20D.C,%20Colombia&z=11&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+
+          <div class="contact-map-overlay">
+            <h3>Bogotá D.C, Colombia</h3>
+            <p>No contamos con oficina física abierta al público. Operamos desde Bogotá y realizamos eventos en toda Colombia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <img src="assets/images/brand/logo-rw-footer.png" alt="RW Producciones">
+        <p>
+          Infraestructura, técnica y montaje para eventos con presencia,
+          seguridad y una imagen profesional.
+        </p>
+      </div>
+
+      <div class="footer-column footer-contact-column">
+        <h4>Contacto</h4>
+        <a href="tel:+573194605024" class="footer-link">+57 3194605024</a>
+        <a href="mailto:contacto@rwproducciones.com" class="footer-link">contacto@rwproducciones.com</a>
+        <a href="https://maps.google.com/?q=Bogotá+D.C,+Colombia" target="_blank" class="footer-link">Bogotá D.C, Colombia</a>
+      </div>
+
+      <div class="footer-column footer-social-column">
+        <h4>Redes</h4>
+        <div class="footer-socials">
+          <a href="https://instagram.com/rwproduccionessas" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="assets/images/icons/instagram.webp" alt="Instagram">
+          </a>
+          <a href="https://tiktok.com/@rwproduccionessas" target="_blank" rel="noopener" aria-label="TikTok">
+            <img src="assets/images/icons/tiktok.png" alt="TikTok">
+          </a>
+          <a href="https://wa.me/573194605024" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <img src="assets/images/icons/whatsapp.png" alt="WhatsApp">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        © 2026 RW Producciones S.A.S. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="assets/js/contacto.js"></script>
+
+  <div class="wa-floating-wrap" id="waFloatingWrap">
+    <div class="wa-chat-card" id="waChatCard">
+      <button class="wa-chat-close" id="waChatClose" aria-label="Cerrar">×</button>
+      <span class="wa-chat-badge">RW Producciones</span>
+      <h4>¿Planeas un evento?</h4>
+      <p>
+        Escríbenos por WhatsApp y te ayudamos a cotizar tarimas, técnica,
+        estructuras y montaje.
+      </p>
+      <a
+        href="https://wa.me/573194605024?text=Hola%20RW%20Producciones%2C%20quiero%20cotizar%20un%20evento."
+        target="_blank"
+        rel="noopener"
+        class="wa-chat-btn"
+        id="waChatBtn"
+      >
+        Ir a WhatsApp
+      </a>
+    </div>
+
+    <a
+      href="https://wa.me/573194605024?text=Hola%20RW%20Producciones%2C%20quiero%20cotizar%20un%20evento."
+      target="_blank"
+      rel="noopener"
+      class="wa-floating-btn"
+      id="waFloatingBtn"
+      aria-label="Escribir por WhatsApp"
+    >
+      <span class="wa-floating-icon">
+        <img src="assets/images/icons/whatsapp.png" alt="WhatsApp">
+      </span>
+      <span class="wa-floating-text">Escríbenos</span>
+    </a>
+  </div>
+
+</body>
+</html>
